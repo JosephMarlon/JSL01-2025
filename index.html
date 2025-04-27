@@ -3,12 +3,19 @@
     <meta />
     <meta />
     <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css">
   </head>
 
   <body>
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
     <nav>
+
+      <div class="logo-container">
+        
+        <img src="assets/logo-light.svg" alt="Logo" class="logo">
+      </div>
       <div>
+        
         <h4>ALL BOARDS (1)</h4>
         <button>Launch Career</button>
       </div>
@@ -17,7 +24,7 @@
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <div>
       <header>
-        <div>
+        <div  class="main-content">
           <h2>Launch Career</h2>
         </div>
       </header>
@@ -26,38 +33,41 @@
         <main>
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
           <div>
-            <div>
-              <span></span>
-              <h4>TODO</h4>
+            <div class="colomn">
+              
+              <h4>TODO (4)</h4>
             </div>
             <!-- Tasks container for TODO -->
             <div>
-              <div>Launch Epic Career 🚀</div>
-              <div>Learn Data Structures and Algorithms 📚</div>
+              <div class="task">Launch Epic Career 🚀</div>
+              <div class="task">crush frameworks 📚</div>
+              <div class="task">Conquer React ⚛️</div>
+              <div class="task">Understand Databases 🗃️</div>
+
             </div>
           </div>
           <!-- DOING Column -->
           <div>
             <div>
-              <span></span>
-              <h4>DOING</h4>
+              
+              <h4>DOING (3)</h4>
             </div>
             <!-- Tasks container for DOING -->
-            <div>
-              <div>Master JavaScript 💛</div>
-              <div>Keep on Going 🏆</div>
+            <div class="column">
+              <div class="task">Master JavaScript 💛</div>
+              <div class="task">Never Give Up 🏆</div>
             </div>
           </div>
           <!-- DONE Column -->
           <div>
             <div>
-              <span></span>
-              <h4>DONE</h4>
+              
+              <h4>DONE (3)</h4>
             </div>
             <!-- Tasks container for DONE -->
-            <div>
-              <div>Contribute to Open Source Projects 🌐</div>
-              <div>Build Portfolio Projects 🛠️</div>
+            <div class="Column">
+              <div class="task">Contribute to Open Source Projects 🌐</div>
+              <div class="task">Build Portfolio Projects 🛠️</div>
             </div>
           </div>
         </main>

@@ -1,0 +1,137 @@
+:root{
+    --bg-primary:#f4f7fd;
+    --text-primary:1d1f22;
+    --accent: #635fc7;
+    --column-bg:#e9effa;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial sans-serif;
+
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+nav{
+    width: 280px;
+    padding: 2rem;
+    border-right: 1px solid #ddd;
+    background: white;
+}
+
+nav button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 2rem 2rem 0;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .logo-container {
+    padding: 0 2rem 1.5rem;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  h4{
+    padding-bottom: 2rem;
+  }
+  .column {
+    min-width: 280px;
+    
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .column h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .task {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  header {
+    padding: 2rem;
+    background: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    nav {
+        display: none; /* Hide sidebar completely on mobile */
+      }
+    
+      .main-content {
+        width: 100%;
+        padding: 0;
+      }
+    
+      header {
+        padding: 1rem;
+        margin-bottom: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      main {
+        padding: 1rem !important;
+        flex-direction: column;
+        gap: 1.5rem;
+        overflow-x: hidden;
+      }
+    
+      .column {
+        background: transparent;
+        padding: 0;
+        min-width: auto;
+      }
+
+      .column h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-primary);
+        padding: 0.5rem 0;
+        border-bottom: 2px solid var(--accent);
+      }
+    
+      .task {
+        margin-bottom: 0.5rem;
+        box-shadow: none;
+        border: 1px solid #eee;
+        padding: 0.75rem;
+      }
+    }
+
